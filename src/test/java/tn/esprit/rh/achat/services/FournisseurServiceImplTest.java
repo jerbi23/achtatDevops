@@ -61,13 +61,13 @@
 	        verify(fournisseurRepository, times(1)).deleteById(fournisseur1.getIdFournisseur());
 	        log.info("Delete works !");
 	    }
-	    @Test
+	  /*  @Test
 	    public void TestUpdateFournisseur() {
 	        when(fournisseurRepository.save(fournisseur1)).thenReturn(fournisseur1);
 	        assertNotNull(fournisseur1);
 	        assertEquals(fournisseur1, fournisseurService.updateFournisseur(fournisseur1));
 	        log.info("Update works !!");
-	    }
+	    }*/
 	    @Test
 	    public void TestRetrieveFournisseur() {
 	        when(fournisseurRepository.findById(fournisseur1.getIdFournisseur())).thenReturn(Optional.of(fournisseur1));
